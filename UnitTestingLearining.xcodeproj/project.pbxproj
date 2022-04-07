@@ -21,6 +21,12 @@
 		A8502D1A27FD7D8400314B59 /* PolicyListDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D1927FD7D8400314B59 /* PolicyListDTO+Mapping.swift */; };
 		A8502D1D27FD7DBA00314B59 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D1C27FD7DBA00314B59 /* Box.swift */; };
 		A8502D1F27FD884000314B59 /* PolicyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D1E27FD884000314B59 /* PolicyListViewController.swift */; };
+		A8502D2227FE7F1A00314B59 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D2127FE7F1A00314B59 /* Endpoint.swift */; };
+		A8502D2427FE7F9E00314B59 /* NetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D2327FE7F9E00314B59 /* NetworkLoader.swift */; };
+		A8502D2627FE8C3100314B59 /* PolicyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8502D2527FE8C3100314B59 /* PolicyListViewController.xib */; };
+		A8502D2827FE8D9600314B59 /* PolicyListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D2727FE8D9600314B59 /* PolicyListCellViewModel.swift */; };
+		A8502D2C27FE8E6900314B59 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8502D2A27FE8E6900314B59 /* EntryViewController.swift */; };
+		A8502D2D27FE8E6900314B59 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8502D2B27FE8E6900314B59 /* EntryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		A8502D1927FD7D8400314B59 /* PolicyListDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PolicyListDTO+Mapping.swift"; sourceTree = "<group>"; };
 		A8502D1C27FD7DBA00314B59 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		A8502D1E27FD884000314B59 /* PolicyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyListViewController.swift; sourceTree = "<group>"; };
+		A8502D2127FE7F1A00314B59 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A8502D2327FE7F9E00314B59 /* NetworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoader.swift; sourceTree = "<group>"; };
+		A8502D2527FE8C3100314B59 /* PolicyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyListViewController.xib; sourceTree = "<group>"; };
+		A8502D2727FE8D9600314B59 /* PolicyListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyListCellViewModel.swift; sourceTree = "<group>"; };
+		A8502D2A27FE8E6900314B59 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		A8502D2B27FE8E6900314B59 /* EntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,8 @@
 		A8502CE627FD7B9B00314B59 /* UnitTestingLearining */ = {
 			isa = PBXGroup;
 			children = (
+				A8502D2927FE8E5400314B59 /* Application */,
+				A8502D2027FE7F0A00314B59 /* Infrastructure */,
 				A8502D1B27FD7DA200314B59 /* Utilities */,
 				A8502D0A27FD7CF700314B59 /* Data */,
 				A8502D0927FD7CF200314B59 /* Domain */,
@@ -119,6 +133,8 @@
 				A8502D1327FD7D4E00314B59 /* PolicyListViewModel.swift */,
 				A8502D1527FD7D5700314B59 /* PolicyListCoordinator.swift */,
 				A8502D1E27FD884000314B59 /* PolicyListViewController.swift */,
+				A8502D2527FE8C3100314B59 /* PolicyListViewController.xib */,
+				A8502D2727FE8D9600314B59 /* PolicyListCellViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -148,6 +164,24 @@
 				A8502D1C27FD7DBA00314B59 /* Box.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8502D2027FE7F0A00314B59 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A8502D2127FE7F1A00314B59 /* Endpoint.swift */,
+				A8502D2327FE7F9E00314B59 /* NetworkLoader.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A8502D2927FE8E5400314B59 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A8502D2A27FE8E6900314B59 /* EntryViewController.swift */,
+				A8502D2B27FE8E6900314B59 /* EntryViewController.xib */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8502D2627FE8C3100314B59 /* PolicyListViewController.xib in Resources */,
+				A8502D2D27FE8E6900314B59 /* EntryViewController.xib in Resources */,
 				A8502CF427FD7B9D00314B59 /* LaunchScreen.storyboard in Resources */,
 				A8502CF127FD7B9D00314B59 /* Assets.xcassets in Resources */,
 			);
@@ -250,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8502D2427FE7F9E00314B59 /* NetworkLoader.swift in Sources */,
 				A8502D1227FD7D4400314B59 /* PolicyListUseCase.swift in Sources */,
 				A8502CE827FD7B9B00314B59 /* AppDelegate.swift in Sources */,
 				A8502D1427FD7D4E00314B59 /* PolicyListViewModel.swift in Sources */,
@@ -260,6 +297,9 @@
 				A8502D1827FD7D7100314B59 /* PolicyListMainRepository.swift in Sources */,
 				A8502D1027FD7D3C00314B59 /* PolicyListRepository.swift in Sources */,
 				A8502D1627FD7D5700314B59 /* PolicyListCoordinator.swift in Sources */,
+				A8502D2C27FE8E6900314B59 /* EntryViewController.swift in Sources */,
+				A8502D2227FE7F1A00314B59 /* Endpoint.swift in Sources */,
+				A8502D2827FE8D9600314B59 /* PolicyListCellViewModel.swift in Sources */,
 				A8502CEA27FD7B9B00314B59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

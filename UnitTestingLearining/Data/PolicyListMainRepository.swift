@@ -6,3 +6,17 @@
 //
 
 import Foundation
+public struct PolicyListMainRepository: PolicyListRepository{
+    
+    private let loader = NetworkLoader()
+    
+    public func retrievePolicyListData(with completion: @escaping (Result<PolicyListEntity, Error>) -> Void) {
+        let endpoint = Endpoint<PolicyListDTO>()
+        
+        loader.load(endpoint: endpoint) { result in
+            
+        }
+    }
+    
+    
+}

@@ -11,14 +11,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
                 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow()
+        window = UIWindow(windowScene: windowScene)
     
-        window?.windowScene = windowScene
+        let vc = EntryViewController(nibName: "EntryViewController", bundle: nil)
+        
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+        
         
         guard let _ = (scene as? UIWindowScene) else { return }
     }
